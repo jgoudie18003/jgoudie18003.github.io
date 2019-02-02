@@ -1,6 +1,5 @@
 /* CIT 230 - Jason Goudie small-4.css */
 
-
 * { margin: 0; box-sizing: border-box; } 
 
 header {
@@ -57,7 +56,7 @@ nav {
             }
             
             nav li {
-              float: Center;
+              float:none;
             }
             
             nav li a {
@@ -80,7 +79,7 @@ nav {
 header img {
     width: 600px;
     height: auto;
-    float: center;
+    float: none;
 }
 
 div.summary ul {
