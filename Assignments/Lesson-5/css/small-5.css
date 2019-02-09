@@ -13,6 +13,7 @@ header {
 body { 
     font-size: 16px; 
     line-height: 32px;
+    text-align: center
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -35,7 +36,7 @@ header, nav, main, section, article, footer {
     border: 2px solid #376092;
 }
 
-main, footer, footer a {
+main, footer, footer a, .contact {
     text-align: center;
     color: rgb(55, 96, 146);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
