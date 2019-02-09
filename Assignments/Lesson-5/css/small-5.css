@@ -79,15 +79,21 @@ nav {
 
 
 header img {
-    width: 60px;
+    width: 250px;
     height: auto;
     float: none;
 }
 
 summary img {
-    width: 60px;
+    width: 250px;
     height: auto;
     float: none; 
+}
+
+section img {
+    width: 250px;
+    height: auto;
+    float: none;
 }
 
 div.summary ul {
