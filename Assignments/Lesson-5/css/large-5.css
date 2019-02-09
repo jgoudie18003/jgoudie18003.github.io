@@ -68,3 +68,8 @@ header img {
     height: auto;
     float: none;
 }
+
+nav li a {
+    display: inline;
+    
+  }
