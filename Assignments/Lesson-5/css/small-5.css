@@ -28,8 +28,6 @@ h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-forecast { }
-
 header, nav, main, section, article, footer {
     margin: 1.55rem auto;
     padding: .5rem;
@@ -100,7 +98,7 @@ div.summary ul {
 display: inline-block;
 vertical-align: top;
 padding-top: 20px;
-position: absolute
+position: absolute;
 list-style-type: none;
 
 }
