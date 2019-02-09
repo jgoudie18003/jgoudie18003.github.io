@@ -1,0 +1,14 @@
+@media screen and (min-width:64em) {
+    nav {
+      float: left;
+      width: 25%;
+    }
+    section {
+      margin-left: 25%;
+    }
+  }
+  @media screen and (max-width:599px) {
+    nav li {
+      display: inline;
+    }
+  }
