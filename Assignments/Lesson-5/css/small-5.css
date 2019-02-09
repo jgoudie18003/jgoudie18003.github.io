@@ -82,6 +82,10 @@ header img {
     float: none;
 }
 
+.summary {
+    position: relative;
+}
+
 .summary img {
     width: 100%;
     height: auto;
@@ -95,10 +99,11 @@ section img {
 }
 
 div.summary ul {
-display: inline-block;
-vertical-align: top;
-padding-top: 20px;
+padding: 1%;
 position: absolute;
+top: 26px;
+left: 26px;
+background-color: white;
 list-style-type: none;
 
 }
