@@ -84,6 +84,12 @@ header img {
     float: none;
 }
 
+summary img {
+    width: 60px;
+    height: auto;
+    float: none; 
+}
+
 div.summary ul {
 display: inline-block;
 vertical-align: top;
