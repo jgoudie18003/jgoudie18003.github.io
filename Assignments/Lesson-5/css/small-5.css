@@ -86,6 +86,9 @@ header img {
     position: relative;
 }
 
+.forecast {
+    display: none;
+}
 .summary img {
     width: 100%;
     height: auto;
