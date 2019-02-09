@@ -1,15 +1,15 @@
 @media only screen and (min-width: 64em) {
     
-    article p.town-article img { width: 29.333%; }
+    article img { width: 29.333%; }
 
 }
 
 @media only screen and (min-width: 1224px) {
     /* Styles */
     body {
-        background-color:floralwhite;
+        background-color:white;
     }
-    article p.town-article img {
+    article img {
         width: 29.333%;
     }
     header {
@@ -19,7 +19,7 @@
         height: 100%;
         margin: 0 auto;
         padding: 0.9rem 4rem;
-        background-color:  #34495e;
+        background-color:  #376092;
         font-size: 20px;
     }
     header h1 {
@@ -27,7 +27,7 @@
         margin: 0;
         display: inline-block;
         color: #fff;
-        float: right
+        float: none
     }
     header .subheading {
         font-size: 1.1em;
@@ -47,11 +47,11 @@
     }
     footer {
         text-align: center;
-        background-color:darkorange;
+        background-color:white;
     }
     footer aside {
         text-align: center;
-        background-color:darkcyan;
+        background-color:#376092;
     }
     footer>p {
         text-align: center;}
