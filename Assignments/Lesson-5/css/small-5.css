@@ -82,8 +82,8 @@ header img {
     float: none;
 }
 
-summary img {
-    width: 250px;
+.summary img {
+    width: 100%;
     height: auto;
     float: none; 
 }
