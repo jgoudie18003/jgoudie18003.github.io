@@ -100,6 +100,7 @@ div.summary ul {
 display: inline-block;
 vertical-align: top;
 padding-top: 20px;
+position: absolute
 list-style-type: none;
 
 }
