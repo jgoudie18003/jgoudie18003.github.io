@@ -57,3 +57,9 @@
         text-align: center;}
 
 }
+
+header img {
+    width: 600px;
+    height: auto;
+    float: none;
+}
