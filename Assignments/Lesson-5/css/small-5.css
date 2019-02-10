@@ -87,6 +87,10 @@ header img {
     position: relative;
 }
 
+.contact img {
+    position: relative;
+}
+
 .forecast {
     display: none;
 }
