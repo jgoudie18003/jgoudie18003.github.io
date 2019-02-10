@@ -78,7 +78,7 @@ nav {
 
 
 header img {
-    width: 250px;
+    width: 320px;
     height: auto;
     float: none;
 }
@@ -89,6 +89,7 @@ header img {
 
 .contact img {
     position: relative;
+    width: 70%;
 }
 
 .forecast {
