@@ -111,6 +111,7 @@ header img {
 article img {
     position: left;
     width: 200%;
+    height: 175px;
 }
 
 article {
