@@ -29,13 +29,29 @@ h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+h3 {
+        border: 2px solid #376092;
+    }
+
+h4 {
+        font-size: 24px;
+        text-align: center;
+}
+
 header, nav, main, section, article, footer {
     margin: 1.55rem auto;
     padding: .5rem;
     max-width: 700px;
-    border: 2px solid #376092;
 }
 
+.contact {
+    background-color: #376092;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 1.55rem auto;
+    padding: .5rem;
+    max-width: 700px;
+}
 main, footer, footer a, .contact {
     text-align: center;
     color: rgb(55, 96, 146);
@@ -78,7 +94,7 @@ nav {
 
 
 header img {
-    width: 320px;
+    width: 100%;
     height: auto;
     float: none;
 }
@@ -95,8 +111,15 @@ header img {
 article img {
     position: absolute;
     width: 200%;
-    top: 26px;
-    left: 26px;
+}
+
+article {
+    border: 2px solid #376092;
+}
+
+p {
+    display: inline-block;
+    width: 300px;
 }
 
 .forecast {
