@@ -92,6 +92,11 @@ header img {
     width: 30%;
 }
 
+article img {
+    position: relative;
+    width: 100%
+}
+
 .forecast {
     display: none;
 }
