@@ -93,8 +93,10 @@ header img {
 }
 
 article img {
-    position: relative;
-    width: 200%
+    position: absolute;
+    width: 200%;
+    top: 26px;
+    left: 26px;
 }
 
 .forecast {
