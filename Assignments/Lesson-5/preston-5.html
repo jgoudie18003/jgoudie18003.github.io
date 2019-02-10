@@ -18,92 +18,83 @@
             like no other weather site before it and maybe after…
         </div>
     </header>
-
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Preston</a></li>
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>
-                    <li><a href="#">Storm Center</a></li>
-                    <li><a href="#">Gallery</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <nav>
-        <main>
-            <h1>Preston, Idaho Weather</h1>
-            <div class="summary">
-                <img src="images/winterlandscape.jpg" alt="images/winterlandscape">
-                <ul class="weatherinfo">
-                    <li>Currently Winter:
-                        <strong>27°</strong>
-                    </li>
-                    <li>High:
-                        <strong>31°</strong>
-                    </li>
-                    <li>Low:
-                        <strong>3°</strong>
-                    </li>
-                </ul>
-            </div>
-
-        </main>
-
-        <section class="forecast">
-            <h3>5 Day Forecast</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th><span id="dayone">Mon</span></th>
-                        <th><span id="dayone">Tue</span></th>
-                        <th><span id="dayone">Wed</span></th>
-                        <th><span id="dayone">Thur</span></th>
-                        <th><span id="dayone">Fri</span></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="images/dayoneweather.jpg" id="weather_pict_one" alt="Weather Icon"><br><span
-                                id="dayonetemperature"></span>High 13&deg;F</td>
-                        <td><img src="images/daytwoweather.jpg" id="weather_pict_two" alt="Weather Icon"><br><span
-                                id="daytwotemperature"></span>High 24&deg;F</td>
-                        <td><img src="images/daythreeweather.jpg" id="weather_pict_three" alt="Weather Icon"><br><span
-                                id="daythreetemperature"></span>High 31&deg;F</td>
-                        <td><img src="images/dayfourweather.jpg" id="weather_pict_four" alt="Weather Icon"><br><span
-                                id="dayfourtemperature"></span>High 28&deg;F</td>
-                        <td><img src="images/dayfiveweather.jpg" id="weather_pict_five" alt="Weather Icon"><br><span
-                                id="dayfivetemperature"></span>High 7&deg;F</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <article>
-            <h2>Preston roads are a mess after snow</h2>
-            <img src="images/snowcoveredroads.jpg" alt="snowyroads">
-            <p>The roads of preston idaho are a mess after the snow storm that came through.
-                Road crews are out in force working to clear the roads and make it safe for drivers.
-                Check back to get the current road conditions before you head out for some travel</p>
-        </article>
-        <div class="contact">
-            <h4>Contact Information</h4>
-            <img src="images/prestonmap.png" alt="prestonmap">
-            <P>Preston Highschool, Preston, Idaho
-                Email: Pedro@fatguyforecast.com
-            </P>
+        <menu>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </menu>
+    </nav>
+    <main>
+        <h1>Preston, Idaho Weather</h1>
+        <div class="summary">
+            <img src="images/winterlandscape.jpg" alt="images/winterlandscape">
+            <ul class="weatherinfo">
+                <li>Currently Winter:
+                    <strong>27°</strong>
+                </li>
+                <li>High:
+                    <strong>31°</strong>
+                </li>
+                <li>Low:
+                    <strong>3°</strong>
+                </li>
+            </ul>
         </div>
-        </section>
-        <footer>
-            <p> © Copyright 2019 - thefatguyforecast.com</p>
-        </footer>
+
+    </main>
+
+    <section class="forecast">
+        <h3>5 Day Forecast</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><span id="dayone">Mon</span></th>
+                    <th><span id="dayone">Tue</span></th>
+                    <th><span id="dayone">Wed</span></th>
+                    <th><span id="dayone">Thur</span></th>
+                    <th><span id="dayone">Fri</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/dayoneweather.jpg" id="weather_pict_one" alt="Weather Icon"><br><span
+                            id="dayonetemperature"></span>High 13&deg;F</td>
+                    <td><img src="images/daytwoweather.jpg" id="weather_pict_two" alt="Weather Icon"><br><span
+                            id="daytwotemperature"></span>High 24&deg;F</td>
+                    <td><img src="images/daythreeweather.jpg" id="weather_pict_three" alt="Weather Icon"><br><span
+                            id="daythreetemperature"></span>High 31&deg;F</td>
+                    <td><img src="images/dayfourweather.jpg" id="weather_pict_four" alt="Weather Icon"><br><span
+                            id="dayfourtemperature"></span>High 28&deg;F</td>
+                    <td><img src="images/dayfiveweather.jpg" id="weather_pict_five" alt="Weather Icon"><br><span
+                            id="dayfivetemperature"></span>High 7&deg;F</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <article>
+        <h2>Preston roads are a mess after snow</h2>
+        <img src="images/snowcoveredroads.jpg" alt="snowyroads">
+        <p>The roads of preston idaho are a mess after the snow storm that came through.
+            Road crews are out in force working to clear the roads and make it safe for drivers.
+            Check back to get the current road conditions before you head out for some travel</p>
+    </article>
+    <div class="contact">
+        <h4>Contact Information</h4>
+        <img src="images/prestonmap.png" alt="prestonmap">
+        <P>Preston Highschool, Preston, Idaho
+            Email: Pedro@fatguyforecast.com
+        </P>
+    </div>
+    </section>
+    <footer>
+        <p> © Copyright 2019 - thefatguyforecast.com</p>
+    </footer>
 </body>
 
 </html>
