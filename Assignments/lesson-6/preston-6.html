@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Goudie Preston-5 Weather Page</title>
+    <meta name="description" content="Goudie Preston-5 Weather Page">
+    <meta name="Jason Goudie" content="Jason Goudie">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/thefatguyforecastlogo.jpg" alt="images/fatguylogo"><br>
+        <div class="motto">
+            like no other weather site before it and maybe after…
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">_</ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Preston, Idaho Weather</h1>
+        <div class="summary">
+            <img src="images/winterlandscape.jpg" alt="images/winterlandscape">
+            <ul class="weatherinfo">
+                <li>Currently Winter:
+                    <strong>27°</strong>
+                </li>
+                <li>High:
+                    <strong>31°</strong>
+                </li>
+                <li>Low:
+                    <strong>3°</strong>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <section class="forecast">
+        <h3>5 Day Forecast</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><span id="dayone">Mon</span></th>
+                    <th><span id="daytwo">Tue</span></th>
+                    <th><span id="daythree">Wed</span></th>
+                    <th><span id="dayfour">Thur</span></th>
+                    <th><span id="dayfive">Fri</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/dayoneweather.jpg" id="weather_pict_one" alt="Weather Icon"><br><span
+                            id="dayonetemperature"></span>High 13&deg;F</td>
+                    <td><img src="images/daytwoweather.jpg" id="weather_pict_two" alt="Weather Icon"><br><span
+                            id="daytwotemperature"></span>High 24&deg;F</td>
+                    <td><img src="images/daythreeweather.jpg" id="weather_pict_three" alt="Weather Icon"><br><span
+                            id="daythreetemperature"></span>High 31&deg;F</td>
+                    <td><img src="images/dayfourweather.jpg" id="weather_pict_four" alt="Weather Icon"><br><span
+                            id="dayfourtemperature"></span>High 28&deg;F</td>
+                    <td><img src="images/dayfiveweather.jpg" id="weather_pict_five" alt="Weather Icon"><br><span
+                            id="dayfivetemperature"></span>High 7&deg;F</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <article>
+        <h2>Preston roads are a mess after snow</h2>
+        <img src="images/snowcoveredroads.jpg" alt="snowyroads">
+        <p>The roads of preston idaho are a mess after the snow storm that came through.
+            Road crews are out in force working to clear the roads and make it safe for drivers.
+            Check back to get the current road conditions before you head out for some travel</p>
+    </article>
+
+    </div>
+    <footer>
+        <aside>
+            <div class="contact">
+                <p><b>thefatguyforecast.com</b></p>
+                <p><i class="material-icons">location_on</i> 1447 East 800 North Road <br>Preston, ID 83263</p>
+                <p><i class="material-icons">phone-iphone</i> 800-YOU-KNOW</p>
+                <p><i class="material-icons">mail_outline</i> pedro@thefatguyforecast.com</p>
+                <img class="social-icons" src="images/facebook.png" alt="Facbook Icon">
+                <img class="social-icons" src="images/pinterest.png" alt="Pinterest Icon">
+                <img class="social-icons" src="images/twitter.png" alt="Twitter Icon">
+                <img class="social-icons" src="images/google.png" alt="Google Icon">
+
+            </div>
+            <div id="googleMap"></div><br>
+        </aside>
+        <p class="footer-bar">&copy;2019 All Rights Reserved | thefatguyforecast.com | <span id="currentdate"></span><br></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRgqTtXaRXVAScHhwtP6V_TLCa0L4zbR8&callback=myMap"></script>
+</body>
+
+</html>
