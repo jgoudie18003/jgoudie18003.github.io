@@ -43,14 +43,16 @@
     nav ul {
         width: 100%;
     }
+    
+    nav .hide {
+        display: none
+    }
+    
     nav ul li {
         display: inline;
         text-align: center;
     }
 
-    nav .hide {
-        display: none
-    }
     .active {
         display: block;
     }
