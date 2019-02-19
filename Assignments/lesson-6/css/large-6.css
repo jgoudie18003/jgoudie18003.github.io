@@ -42,9 +42,10 @@
 
     nav ul {
         width: 100%;
+        display: inline;
     }
     
-    nav .hide {
+    nav .hidehamburger {
         display: none
     }
     
