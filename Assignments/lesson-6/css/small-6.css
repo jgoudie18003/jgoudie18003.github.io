@@ -51,6 +51,7 @@ header, nav, main, section, article, footer {
     margin: 1.55rem auto;
     padding: .5rem;
     max-width: 700px;
+    display: inline;
 }
 main, footer, footer a {
     text-align: center;
