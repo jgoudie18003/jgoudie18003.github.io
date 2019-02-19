@@ -32,7 +32,7 @@
         margin: 0;
         display: inline-block;
         color: #fff;
-        float: none
+        float: none;
     }
     header .subheading {
         font-size: 1.1em;
@@ -41,12 +41,11 @@
     }
 
     nav ul {
-        width: 100%;
         display: inline;
     }
     
     nav .hidehamburger {
-        display: none
+        display: none;
     }
     
     nav ul li {
