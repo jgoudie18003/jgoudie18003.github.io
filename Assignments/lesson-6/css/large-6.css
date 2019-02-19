@@ -40,7 +40,7 @@
         display: contents;
     }
 
-    nav ul {
+    nav ul.hide {
         display: inline;
     }
     
