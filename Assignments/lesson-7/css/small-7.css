@@ -2,7 +2,7 @@
 
 * { margin: 0; box-sizing: border-box; } 
 
-header {
+header, .motto {
     font-size: 26px;
     text-align: center;
     color: rgb(55, 96, 146);
