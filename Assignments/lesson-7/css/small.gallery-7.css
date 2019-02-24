@@ -1,7 +1,5 @@
 /* CIT 230 - Jason Goudie small-7.css */
 
-* { margin: 0; box-sizing: border-box; } 
-
 header {
     font-size: 26px;
     text-align: center;
@@ -67,7 +65,7 @@ footer, footer a {
 
 }
 
-main {
+.figure {
     display: grid;
     grid-template-rows: row;
     grid-gap: 20px;
