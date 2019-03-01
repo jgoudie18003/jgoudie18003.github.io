@@ -57,7 +57,6 @@ footer aside {
     margin: 1.55rem auto;
     padding-left: .5rem;
     max-width: 100%;
-    text-align: left;
     display: inline;
 }
 main, footer, footer a {
@@ -70,7 +69,6 @@ nav {
     color: #FFFFFF;
     background: #376092;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
     justify-content: space-around;
     
 }
@@ -136,7 +134,7 @@ article {
     border: 2px solid #376092;
 }
 
-p {
+article p {
     display: inline-block;
     width: 300px;
 }
@@ -169,19 +167,17 @@ list-style-type: none;
 footer {
     font-size: 12px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
+    display: block;
 }
 
 .footer-bar {
     width: 100%
 }
 
-.googleMap {
-    margin: 20px;
-    max-width:100%;
-    height: 100%;
+#googleMap {
+    margin: auto;
+    width: 300px;
+    height: 200px;
     border: 1px solid #376092;
     display: center;
 }

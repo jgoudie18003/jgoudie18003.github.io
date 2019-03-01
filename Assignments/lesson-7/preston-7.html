@@ -33,10 +33,11 @@
             <img class="myphoto" src="images/herounedited.jpg" alt="images/herolandscape" sizes="50vw"
                 srcset="images/hero200.jpg 400w, images/hero400.jpg 800w, images/hero800.jpg 1000w">
             <ul class="weatherinfo">
-                <li>Currently Winter:<strong>27°</strong></li>
-                <li>High:<strong>31°</strong></li>
-                <li>Low:<strong>3°</strong></li>
-                <li>Windchill:<strong>?</strong></li>
+                <li>Currently Winter:<strong>27&deg;</strong></li>
+                <li>High:<strong><span id="temp">31</span>&deg;</strong></li>
+                <li>Low:<strong>3&deg;</strong></li>
+                <li>Windchill:<strong><span id="windchill"></span>></strong></li>
+                <li>WindSpeed:<strong><span></span></strong></li>
             </ul>
         </div>
 
@@ -85,26 +86,29 @@
                 <p><i class="material-icons">location_on</i> 1447 East 800 North Road <br>Preston, ID 83263</p>
                 <p><i class="material-icons">phone-iphone</i> 800-YOU-KNOW</p>
                 <p><i class="material-icons">mail_outline</i> pedro@thefatguyforecast.com</p>
-                <img class="social-icons" src="images/facebook.jpg" alt="Facbook Icon">
-                <img class="social-icons" src="images/pinterest.jpg" alt="Pinterest Icon">
-                <img class="social-icons" src="images/twitter.jpg" alt="Twitter Icon">
-                <img class="social-icons" src="images/google.jpg" alt="Google Icon">
-
+                <div class="social">
+                    <img class="social-icons" src="images/facebook.jpg" alt="Facbook Icon">
+                    <img class="social-icons" src="images/pinterest.jpg" alt="Pinterest Icon">
+                    <img class="social-icons" src="images/twitter.jpg" alt="Twitter Icon">
+                    <img class="social-icons" src="images/google.jpg" alt="Google Icon">
+                </div>
             </div>
-            <div id ="googleMap"></div><br>
+            <div id="googleMap"></div><br>
         </aside>
+    
+    <p class="footer-bar">&copy;2019 All Rights Reserved | thefatguyforecast.com | <span id="currentdate"></span><br></p>
+    
     </footer>
 
-    </footer class="footer-bar">
-    <p>&copy;2019 All Rights Reserved | thefatguyforecast.com | <span id="currentdate"></span><br></p>
-    </footer>
+
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windspeed.js"></script>
+    <script src="scripts/map.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRgqTtXaRXVAScHhwtP6V_TLCa0L4zbR8&callback=myMap"></script>
-        <script src="scripts/map.js"></script>
+
 </body>
 
 </html>

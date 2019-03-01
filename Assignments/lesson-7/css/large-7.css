@@ -59,13 +59,22 @@
     footer {
         text-align: center;
         background-color:white;
+        
     }
     footer aside {
         text-align: center;
         background-color:#376092;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
     }
     footer>p {
         text-align: center;}
+
+    .contact {
+        justify-self: end;
+        margin-right: 0px
+    }
 
 .forecast {
     display: inline-block;
