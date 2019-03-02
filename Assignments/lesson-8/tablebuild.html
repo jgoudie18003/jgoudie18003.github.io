@@ -1,29 +1,70 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en-us">
-
 <head>
     <meta charset="utf-8">
-    <title>Goudie Preston-7 Weather Page</title>
-    <meta name="description" content="Goudie Preston-7 Weather Page">
-    <meta name="Jason Goudie" content="Jason Goudie">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/large.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Data Table</title>
+    <meta name="description" content="Build a Data Table, Jason Goudie CIT 230, BYU Idaho>
+    <link rel="stylesheet" href="styles/table-8.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu">
 </head>
-
 <body>
-    <header>
-        <img src="images/thefatguyforecastlogo.jpg" alt="images/fatguylogo"><br>
-
-    </header>
-    <nav>
-        <button class="hidehamburger" onclick="toggleNavMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide">
-            <li><a href="#">Home</a></li>
-            <li><a href="https://jgoudie18003.github.io/Assignments/lesson-7/preston-7.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="https://jgoudie18003.github.io/Assignments/lesson-7/gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
+    <h1>Data Table</h1>
+    <p>Build a Data table Assessment</p>
+    <br>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">ACME Wildwest</th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr>
+                    <td>Period</td>
+                    <td>Sales</td>
+                    <td>Sales goal</td>
+                </tr>
+                 <tr>
+                    <td>August</td>  
+                    <td>$3,590</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <td>September</td>  
+                    <td>$4,420</td>
+                    <td>$5,000</td>
+                </tr>
+                 <tr>
+                    <td>October</td>  
+                    <td>$4,870</td>
+                    <td>$5,000</td>
+                </tr>
+                 <tr class="highest ">
+                    <td>November</td>  
+                    <td>$8,610</td>
+                    <td>$7,500</td>
+                </tr>
+                 <tr>
+                    <td>Black Friday</td>  
+                    <td colspan="2">$3,200</td>
+                </tr>
+                 <tr>
+                    <td>December</td>  
+                    <td>$6,820</td>
+                    <td>$7,500</td>
+                </tr>
+            </tbody>     
+            <tfoot>
+                <tr>
+                    <th colspan="3">Compiled 12.20.2020 by bRauls
+                    </th>
+                </tr>
+            </tfoot>
+        
+        
+        </table>
+    </main>
+</body>
+</html>
