@@ -123,6 +123,11 @@ header img {
     position: relative;
 }
 
+form {
+    max-width: 500px;
+    margin: auto;
+    display: block;
+}
 
 article img {
     position: relative;
