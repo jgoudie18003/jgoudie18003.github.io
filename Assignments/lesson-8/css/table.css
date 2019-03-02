@@ -1,37 +1,56 @@
-html {
-    font-family: "Ubuntu", sans-serif;
-  }
-  
-  table {
-    border-collapse: collapse;
-    border: 2px solid rgb(200,200,200);
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-  }
-  thead, tfoot { background-color: #7fb9c2;
-  }
-  td, th {
-    border: 1px solid rgb(190,190,190);
-    padding: 10px 20px;
-   
-  }
-  thead{ font-size: 2rem;}
-  .list{ background-color: #628ca6; color: #ffffff; } 
-  
-  tr:nth-child(even) td {
-    background-color: #e7ffed;
-  }
-  
-  tr:nth-child(odd) td {
-    background-color: #e7f0ed;
-  }
-  
-  .highest :nth-child(3){ background-color: #628ca6;  color: #ffffff;
-  } 
-  tr:nth-child(1) td {
-      background-color: #628ca6;
-  }
-  tbody tr:nth-child(6) td:nth-child(2){
-          text-align: center;
-      
-  }
+body {
+	background-color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table, th, td {
+	border: 1px solid #bbb;
+	border-collapse: collapse;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table {
+	margin: 2.5em auto;
+	box-shadow: 6px 6px 12px #628ca6;
+}
+
+thead, tfoot {	
+	background-color: #7fb9c2;
+	color: #000;
+	font-weight: 900;
+	font-size: 2em;
+}
+
+th {
+	padding: .6em;
+	background-color: #628ca6;
+	color: #fff;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+td {
+	padding: .6em;
+}
+
+tbody {
+	background-color: #e7ffed;
+}
+
+tr:nth-child(5) td:nth-child(3) {
+	background-color: #628ca6;
+	color: #fff;
+}
+tr:nth-child(6) td:first-child {
+	font-style: italic;
+}
+
+tr:nth-child(even){
+	background-color: #e7f0ed;
+}
+
+tfoot {
+	font-weight: normal;
+    font-size: .75em;
+}
