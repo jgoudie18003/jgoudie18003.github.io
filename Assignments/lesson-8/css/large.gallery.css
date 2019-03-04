@@ -85,7 +85,7 @@ nav li a {
     display: inline;
     
   }
-}
+
 
 .gallery {
         display: grid;
@@ -94,4 +94,6 @@ nav li a {
         grid-gap: 20px;
         width: 30%
     
+}
+
 }
