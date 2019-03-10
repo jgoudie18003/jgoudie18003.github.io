@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Stormcenter</title>
+    <meta name="description" content="Goudie Stormcenter 8 Weather Page">
+    <meta name="Jason Goudie" content="Jason Goudie">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/thefatguyforecastlogo.jpg" alt="images/fatguylogo"><br>
+
+    </header>
+    <nav>
+        <button class="hidehamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/lesson-8/preston-8.html">Preston</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/lesson-8/sodasprings.html">Soda Springs</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/lesson-8/fishhaven.html">Fish Haven</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/lesson-8/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/lesson-8/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Storm Center</h1>
+
+
+        <form action="thanks.html" method="get" enctype="multipart/form-data" name="Storm report" id="storm">
+
+
+            <fieldset>
+                <legend><span>Personal Information</span></legend>
+
+                <label><span>Full Name:</span> <input name="FullName" type="text" value="" placeholder="Your Name Here"
+                        pattern="[a-zA-Z -._]{5,99}" required></label><br>
+                <label><span>Email:</span> <input name="email" type="email" value=""
+                        placeholder="youremail@gmail.com"></label><br>
+                <label><span>Phone Number:</span> <input name="Phone" type="tel" value="" placeholder="ex. 98346583948"
+                        pattern="[0-9]{10,20}" required></label><br>
+                <label><span>Zip Code:</span> <input name="Zip Code" type="number" value="" placeholder="ex. 54879"
+                        required></label><br>
+            </fieldset>
+
+            <fieldset>
+
+                <legend><span>Storm Information</span></legend>
+
+                <label><span>Storm Date:</span><input name="Storm Date" type="date" value=""></label><br>
+                <label><span>Storm Type:</span><input name="Storm Type" type="text" list="StormType"></label>
+                <datalist id="StormType">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist><br>
+
+                <label><span>Storm Severity:</span> <input name="Storm Severity" type="range" value="5" min="1" max="10"
+                        step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span
+                        id="ratingvalue">5</span></label><br>
+
+
+                <label><span>Storm Region:</span><select name="Storm Region">
+                        <option selected disabled>Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda-Springs">Soda Springs</option>
+                        <option value="Fish-Haven">Fish Haven</option>
+                    </select></label> <br>
+
+
+                <label><span>User in-danger level:</span> <input name="Danger" type="radio" value="Yes">Yes</label>
+                <input name="Danger" type="radio" value="Maybe">Maybe
+                <input name="Danger" type="radio" value="No">No<br>
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>Additional Information or Comments</legend>
+
+                <textarea name="comments" rows="10" cols="30"></textarea>
+            </fieldset>
+
+
+            <input type="submit" value="submit" form="storm" class="submitb">
+            <input name="redirect" type="hidden" value="thanks.html">
+
+
+        </form>
+
+
+    </main>
+
+    <footer>
+        <aside>
+            <div class="contact">
+                <p><b>thefatguyforecast.com</b></p>
+                <p><i class="material-icons">location_on</i> 1447 East 800 North Road <br>Preston, ID 83263</p>
+                <p><i class="material-icons">phone-iphone</i> 800-YOU-KNOW</p>
+                <p><i class="material-icons">mail_outline</i> pedro@thefatguyforecast.com</p>
+                <div class="social">
+                    <img class="social-icons" src="images/facebook.jpg" alt="Facbook Icon">
+                    <img class="social-icons" src="images/pinterest.jpg" alt="Pinterest Icon">
+                    <img class="social-icons" src="images/twitter.jpg" alt="Twitter Icon">
+                    <img class="social-icons" src="images/google.jpg" alt="Google Icon">
+                </div>
+            </div>
+            <div id="googleMap"></div><br>
+        </aside>
+
+        <p class="footer-bar">&copy;2019 All Rights Reserved | thefatguyforecast.com | <span
+                id="currentdate"></span><br></p>
+
+    </footer>
+
+
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/adjustrating.js"></script>
+    <script src="scripts/map.js"></script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRgqTtXaRXVAScHhwtP6V_TLCa0L4zbR8&callback=myMap"></script>
+
+</body>
+
+</html>
