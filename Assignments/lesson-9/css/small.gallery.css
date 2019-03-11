@@ -62,7 +62,6 @@ footer, footer a {
     color: #376092;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-
 }
 
 
@@ -180,7 +179,7 @@ max-width:
 
 @media 
 only screen 
-and (min-width: 
+and (max-width: 
 900px) {
 
 div.gallery {
@@ -204,7 +203,7 @@ grid-gap:
 @media 
 only screen 
 and (min-width: 
-1224px) {
+1000px) {
 
 div.gallery {
 
