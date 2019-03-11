@@ -1,16 +1,16 @@
 /* || general styles */
 
 html {
-    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   body {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
   }
   
   h1, h2 {
-    font-family: 'Faster One', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   /* header styles */
@@ -18,7 +18,7 @@ html {
   h1 {
     font-size: 4rem;
     text-align: center;
-    color: green
+    color:rgb(55, 96, 146)
   }
   
   header p {
@@ -46,5 +46,5 @@ html {
     font-size: 2.5rem;
     letter-spacing: -5px;
     margin-bottom: 10px;
-    color: red
+    color:rgb(55, 96, 146)
   }
