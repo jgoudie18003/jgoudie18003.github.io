@@ -27,47 +27,98 @@
             <li><a href="https://jgoudie18003.github.io/Assignments/lesson-9/gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    <main>
-       
+    <section>
 
-    </main>
+        <link rel="stylesheet" href="css/style.css">
 
-    <section class="forecast">
-       
-    </section>
-    <article>
-      
-    </article>
+        <script>
+            var header = document.querySelector('header');
+            var section = document.querySelector('section');
+            var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
 
-    <footer>
-        <aside>
-            <div class="contact">
-                <p><b>thefatguyforecast.com</b></p>
-                <p><i class="material-icons">location_on</i> 1447 East 800 North Road <br>Preston, ID 83263</p>
-                <p><i class="material-icons">phone-iphone</i> 800-YOU-KNOW</p>
-                <p><i class="material-icons">mail_outline</i> pedro@thefatguyforecast.com</p>
-                <div class="social">
-                    <img class="social-icons" src="images/facebook.jpg" alt="Facbook Icon">
-                    <img class="social-icons" src="images/pinterest.jpg" alt="Pinterest Icon">
-                    <img class="social-icons" src="images/twitter.jpg" alt="Twitter Icon">
-                    <img class="social-icons" src="images/google.jpg" alt="Google Icon">
-                </div>
+            request.onload = function () {
+                var townsData = request.response;
+                showTowns(townsData);
+            }
+
+            function showTowns(jsonObj) {
+                var towns = jsonObj["towns"]; 
+
+                for (var i = 0; i < towns.length; i++) {
+
+                    if (towns[i].name != "Placerton") {
+
+                        var myArticle = document.createElement("article");
+                        var myH2 = document.createElement('h2');
+                        var myPara1 = document.createElement('p');
+                        var myPara2 = document.createElement('p');
+                        var myPara3 = document.createElement('p');
+                        var myPara4 = document.createElement('p');
+                        var myPara5 = document.createElement('p');
+                        var myPara6 = document.createElement('p');
+                        var myList = document.createElement('ul');
+
+                        myH2.textContent = towns[i].name;
+                        //myPara1.textContent = 'Town: ' + towns[i].name;
+                        myPara2.textContent = 'Motto: ' + towns[i].motto;
+                        myPara3.textContent = 'Year Founded: ' + towns[i].yearFounded;
+                        myPara4.textContent = 'Current Population: ' + towns[i].currentPopulation;
+                        myPara5.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+                        myPara6.textContent = 'Events: ';
+
+                        var townEvents = towns[i].events;
+                        for (var j = 0; j < townEvents.length; j++) {
+                            var listItem = document.createElement('li');
+                            listItem.textContent = townEvents[j];
+                            myList.appendChild(listItem);
+                        }
+
+                        myArticle.appendChild(myH2);
+                        myArticle.appendChild(myPara1);
+                        myArticle.appendChild(myPara2);
+                        myArticle.appendChild(myPara3);
+                        myArticle.appendChild(myList);
+
+                        section.appendChild(myArticle);
+                    }
+                }
+            }
+
+        </script>
+<footer>
+    <aside>
+        <div class="contact">
+            <p><b>thefatguyforecast.com</b></p>
+            <p><i class="material-icons">location_on</i> 1447 East 800 North Road <br>Preston, ID 83263</p>
+            <p><i class="material-icons">phone-iphone</i> 800-YOU-KNOW</p>
+            <p><i class="material-icons">mail_outline</i> pedro@thefatguyforecast.com</p>
+            <div class="social">
+                <img class="social-icons" src="images/facebook.jpg" alt="Facbook Icon">
+                <img class="social-icons" src="images/pinterest.jpg" alt="Pinterest Icon">
+                <img class="social-icons" src="images/twitter.jpg" alt="Twitter Icon">
+                <img class="social-icons" src="images/google.jpg" alt="Google Icon">
             </div>
-            <div id="googleMap"></div><br>
-        </aside>
-    
-    <p class="footer-bar">&copy;2019 All Rights Reserved | thefatguyforecast.com | <span id="currentdate"></span><br></p>
-    
-    </footer>
+        </div>
+        <div id="googleMap"></div><br>
+    </aside>
+
+    <p class="footer-bar">&copy;2019 All Rights Reserved | thefatguyforecast.com | <span id="currentdate"></span><br>
+    </p>
+
+</footer>
 
 
 
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windspeed.js"></script>
-    <script src="scripts/map.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRgqTtXaRXVAScHhwtP6V_TLCa0L4zbR8&callback=myMap"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/windspeed.js"></script>
+<script src="scripts/map.js"></script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRgqTtXaRXVAScHhwtP6V_TLCa0L4zbR8&callback=myMap"></script>
 
 </body>
 
