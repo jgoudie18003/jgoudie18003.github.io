@@ -1,13 +1,12 @@
 
-var section = document.getElementById("weatherapi");
 var requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=1712458fe634bfb44de4aeb2b8175957";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
-weatherRequest.send();
+request.send();
 
-weatherRequest.onload =  function () {
-    let weatherData = JSON.parse(weatherRequest.responseText);
+request.onload =  function () {
+    let weatherData = JSON.parse(request.responseText);
 
     var tempF = weatherData.main.temp;
     var speed = weatherData.wind.speed; 
