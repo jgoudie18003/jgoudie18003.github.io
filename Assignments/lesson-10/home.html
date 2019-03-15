@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gallery</title>
-    <meta name="description" content="gallery">
+    <title>Goudie Home Weather Page</title>
+    <meta name="description" content="Goudie Home Weather Page">
     <meta name="Jason Goudie" content="Jason Goudie">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -28,36 +28,18 @@
             <li><a href="https://jgoudie18003.github.io/Assignments/lesson-10/gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    <main>
-        <h1>Gallery</h1>
-        <div class="gallery">
-            <figure>
-                <img src="images/gallery-1.jpg" alt="images/gallery-1">
-                <figcaption>Preston, ID</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery-2.jpg" alt="images/gallery-2">
-                <figcaption>Soda Springs, ID</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery-3.jpg" alt="images/gallery-3">
-                <figcaption>Boise, ID</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery-4.jpg" alt="images/gallery-4">
-                <figcaption>Fish Haven, ID</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery-5.jpg" alt="images/gallery-5">
-                <figcaption>Fairfield, ID</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery-6.jpg" alt="images/gallery-6">
-                <figcaption>Hot Springs, ID</figcaption>
-            </figure>
-        </div>
-    </main>
 
+    <main>
+            <h1>The Fat Guy Forecast Home</h1>
+            <div class="summary">
+                <img class="myphoto" src="images/herounedited.jpg" alt="images/herolandscape" sizes="50vw"
+                    srcset="images/hero200.jpg 400w, images/hero400.jpg 800w, images/hero800.jpg 1000w">
+            </div>
+        <section>
+            <article id="towndata">
+            </article>
+        </section>
+    </main>
     <footer>
         <aside>
             <div class="contact">
@@ -76,13 +58,18 @@
         </aside>
 
         <p class="footer-bar">&copy;2019 All Rights Reserved | thefatguyforecast.com | <span
-                id="currentdate"></span><br></p>
+                id="currentdate"></span><br>
+        </p>
 
     </footer>
 
-
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/town-data.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRgqTtXaRXVAScHhwtP6V_TLCa0L4zbR8&callback=myMap"></script>
+
 </body>
 
 </html>
