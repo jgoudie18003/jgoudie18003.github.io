@@ -34,7 +34,7 @@ function populate(jsonObj) {
         myPara3.textContent = 'Annual Rain Fall: ' + towndetails[i].averageRainfall;
 
         if (i === 1) {
-            image.setAttribute('src', 'images/fishhaven.jpg');
+            image.setAttribute('src', 'images/fish_haven.jpg');
             image.setAttribute('alt', 'Town of Fish Haven');
         }
         if (i === 4) {
@@ -42,7 +42,7 @@ function populate(jsonObj) {
             image.setAttribute('alt', 'Town of Preston');
         }
         if (i === 5) {
-            image.setAttribute('src', 'images/sodasprings.jpg');
+            image.setAttribute('src', 'images/soda_springs.jpg');
             image.setAttribute('alt', 'Town of Soda Springs');
         }
 
