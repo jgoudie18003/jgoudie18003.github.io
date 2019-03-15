@@ -136,6 +136,11 @@ form {
 #towndata p{
     display: block;
     margin: auto;
+    
+}
+
+#towndata img{
+    width: 100%;
 }
 
 article img {
