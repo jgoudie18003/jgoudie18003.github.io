@@ -66,6 +66,10 @@
         margin-right: 0px
     }
 
+#towndata{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .forecast {
     display: inline-block;
 }
