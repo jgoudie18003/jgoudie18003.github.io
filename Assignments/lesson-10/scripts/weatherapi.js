@@ -15,9 +15,21 @@ request.onload = function () {
     outputDiv = Math.round(outputDiv);
 
     document.getElementById("current").innerHTML = weatherData.weather[0].description;
-    document.getElementById("tempF").innerHTML = tempF;
+    document.getElementById("tempF").innerHTML = tempF + "°F";
     document.getElementById("humidity").innerHTML = weatherData.main.humidity;
     document.getElementById("outputDiv").innerHTML = outputDiv + "°F";
     document.getElementById("speed").innerHTML = speed;
+
+}
+
+var weatherRequest = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=1712458fe634bfb44de4aeb2b8175957&units=imperial";
+var forecast = new XMLHttpRequest();
+forecast.open('GET', weatherRequest);
+forecast.send();
+
+forecast.onload = function () {
+    let weatherData = JSON.parse(forecast.responseText);
+    console.log(weatherData); 
+
 
 }
