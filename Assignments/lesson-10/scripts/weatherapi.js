@@ -14,6 +14,10 @@ request.onload = function () {
     var outputDiv = 35.74 + 0.6215 * tempF - 35.75 * windspeed + 0.4275 * tempF * windspeed;
     outputDiv = Math.round(outputDiv);
 
+    document.getElementById("current").innerHTML = weatherData.weather[0].description;
+    document.getElementById("tempF").innerHTML = tempF;
+    document.getElementById("humidity").innerHTML = weatherData.main.humidity;
     document.getElementById("outputDiv").innerHTML = outputDiv + "°F";
+    document.getElementById("speed").innerHTML = speed;
 
 }
