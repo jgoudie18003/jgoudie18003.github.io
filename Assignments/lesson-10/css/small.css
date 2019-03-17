@@ -140,7 +140,7 @@ form {
 }
 
 #towndata img{
-    width: 100%;
+    width: 70%;
 }
 
 article img {
@@ -184,7 +184,7 @@ p {
   }
   
 .summary img {
-    width: 100%;
+    width: 70%;
     height: auto;
     float: none; 
 }
