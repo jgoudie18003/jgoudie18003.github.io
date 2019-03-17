@@ -166,6 +166,21 @@ p {
 .forecast {
     display: none;
 }
+
+.cityData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cityData > h2 {
+    margin: auto;
+  }
+  
+  .cityData img {
+    float: left;
+  }
+  
 .summary img {
     width: 100%;
     height: auto;
