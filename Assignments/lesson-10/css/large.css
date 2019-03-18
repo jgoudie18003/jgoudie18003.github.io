@@ -80,6 +80,9 @@
     width: 100%;
 }
 
+table {
+    display: center;
+}
 td {
     width: 100px;
 }
