@@ -70,6 +70,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+#events {
+    border: none;
+}
 .forecast {
     display: inline-block;
     border: #376092;
