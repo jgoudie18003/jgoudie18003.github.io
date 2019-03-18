@@ -41,5 +41,5 @@ function showPrestonEvents(info) {
     
 }
 
-var eventsPreston = document.querySelector(".articleEvents");
+var eventsPreston = document.querySelector("townEvents");
 
