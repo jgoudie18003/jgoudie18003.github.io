@@ -72,11 +72,16 @@
 }
 .forecast {
     display: inline-block;
-    border: #376092
+    border: #376092;
+    width: 1200px;
 }
 
 .forecast img {
     width: 100%;
+}
+
+td {
+    width: 100px;
 }
 
 header img {
