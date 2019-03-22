@@ -19,4 +19,11 @@ grid-gap:
 
 }
 
+.prestonEvents {
+    display: inline-flex;
+}
+.prestonEvents div {
+    margin-right: 20px;
+}
+
 }
