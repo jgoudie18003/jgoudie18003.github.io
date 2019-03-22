@@ -45,7 +45,7 @@ h4 {
 header, nav, main, section, article, footer {
     margin: 1.55rem auto;
     padding: .5rem;
-    max-width: 100%;
+    max-width: 70%;
 }
 
 footer aside {
