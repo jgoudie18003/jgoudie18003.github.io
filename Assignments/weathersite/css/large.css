@@ -1,0 +1,139 @@
+    
+@media only screen and (min-width: 1024px) {
+    /* Styles */
+    body {
+        background-color:white;
+    }
+    article img {
+        width: 29.333%;
+    }
+    header {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0.9rem 4rem;
+        background-color:  white;
+        font-size: 20px;
+    }
+    header h1 {
+
+        margin: 0;
+        display: inline-block;
+        color: #fff;
+        float: none;
+    }
+    header .subheading {
+        font-size: 1.1em;
+        color: #fff;
+        display: contents;
+    }
+
+    nav ul.hide {
+        display: inline;
+    }
+    
+    nav .hidehamburger {
+        display: none;
+    }
+    
+    nav ul li {
+        display: inline;
+        text-align: center;
+    }
+
+    .active {
+        display: block;
+    }
+    footer {
+        text-align: center;
+        background-color:white;
+        
+    }
+    footer aside {
+        text-align: center;
+        background-color:#376092;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
+    }
+    footer>p {
+        text-align: center;}
+
+    .contact {
+        justify-self: end;
+        margin-right: 0px
+    }
+
+#towndata{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#events {
+    border:#376092
+}
+.forecast {
+    display: inline-block;
+    border: #376092;
+    width: 1200px;
+}
+
+.forecast img {
+    width: 100%;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+td {
+    width: 100px;
+}
+
+header img {
+    width: 600px;
+    height: auto;
+    float: none;
+}
+
+nav li a {
+    display: inline;
+    
+  }
+/*large gallery styles*/
+
+@media 
+only screen 
+and (min-width: 
+1000px) {
+
+div.gallery {
+
+grid-template-columns: 
+1fr 
+1fr 
+1fr;
+
+max-width: 
+100%;
+
+margin: 
+0;
+
+}
+
+}
+
+  .gallery {
+    display: grid;
+    width: 200%
+
+}
+
+}
+  

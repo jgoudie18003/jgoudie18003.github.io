@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fish haven</title>
+    <meta name="description" content="fishhaven">
+    <meta name="Jason Goudie" content="Jason Goudie">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/thefatguyforecastlogo.jpg" alt="images/fatguylogo"><br>
+
+    </header>
+    <nav>
+        <button class="hidehamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="https://jgoudie18003.github.io/Assignments/weathersite/home.html">Home</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/weathersite/preston.html">Preston</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/weathersite/sodasprings.html">Soda Springs</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/weathersite/fishhaven.html">Fish Haven</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/weathersite/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/weathersite/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Fish Haven, Idaho Weather</h1>
+        <div class="summary">
+            <img class="myphoto" src="images/fish_haven.jpg" alt="images/fish_haven" sizes="50vw"
+                srcset="images/fish_haven.jpg 400w, images/fish_haven.jpg 800w, images/fish_haven.jpg 1000w">
+            <ul class="weatherinfo">
+                <li>Currently:<strong><span id="current"></span></strong></li>
+                <li>Temp:<strong><span id="tempF"></span>&deg;</strong></li>
+                <li>Humidity:<strong><span id="humidity"></span>%</strong></li>
+                <li>Windchill:<strong><span id="outputDiv"></span></strong></li>
+                <li>WindSpeed:<strong><span id="speed">18</span> mph</strong></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <section class="forecast">
+        <h3>5 Day Forecast</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><span id="day1"></span></th>
+                    <th><span id="day2"></span></th>
+                    <th><span id="day3"></span></th>
+                    <th><span id="day4"></span></th>
+                    <th><span id="day5"></span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="#" id="weather_icon1" alt="Weather Icon"><br><span id="highTemp1"></span>&deg;F</td>
+                    <td><img src="#" id="weather_icon2" alt="Weather Icon"><br><span id="highTemp2"></span>&deg;F</td>
+                    <td><img src="#" id="weather_icon3" alt="Weather Icon"><br><span id="highTemp3"></span>&deg;F</td>
+                    <td><img src="#" id="weather_icon4" alt="Weather Icon"><br><span id="highTemp4"></span>&deg;F</td>
+                    <td><img src="#" id="weather_icon5" alt="Weather Icon"><br><span id="highTemp5"></span>&deg;F</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <article>
+        <h2>Fish Haven Fish Tornado</h2>
+        <img src="images/snowcoveredroads.jpg" alt="snowyroads">
+        <p>Straightout of a scene from Sharknado residents were terrified when a water funnel sucked up thousands of
+            fish from a local lake and dumped them the unsuspecting town. It is a rare natural phenonemon that has led
+            to
+            a massive cleanup around town. </p>
+    </article>
+    <section class="fishhavenEvents">
+        <h2>Upcoming town events!</h2>
+        <div>
+            <img src="images/napolean_dynamite_festival.jpg" alt="Napolean and Pedro">
+        </div>
+    </section>
+
+    <footer>
+        <aside>
+            <div class="contact">
+                <p><b>thefatguyforecast.com</b></p>
+                <p><i class="material-icons"></i> 1447 East 800 North Road <br>Preston, ID 83263</p>
+                <p><i class="material-icons"></i> 800-YOU-KNOW</p>
+                <p><i class="material-icons"></i> pedro@thefatguyforecast.com</p>
+                <div class="social">
+                    <img class="social-icons" src="images/facebook.jpg" alt="Facbook Icon">
+                    <img class="social-icons" src="images/pinterest.jpg" alt="Pinterest Icon">
+                    <img class="social-icons" src="images/twitter.jpg" alt="Twitter Icon">
+                    <img class="social-icons" src="images/google.jpg" alt="Google Icon">
+                </div>
+            </div>
+            <div id="googleMap"></div><br>
+        </aside>
+        <p class="span-2">
+            Weather Data provided by <a href="https://openweathermap.org">OpenWeatherMap.org</a>
+        </p>
+        <p class="footer-bar">&copy;2019 All Rights Reserved | thefatguyforecast.com | <span
+                id="currentdate"></span><br></p>
+
+    </footer>
+
+
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windspeed.js"></script>
+    <script src="scripts/fishhavenweatherapi.js"></script>
+    <script src="scripts/map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRgqTtXaRXVAScHhwtP6V_TLCa0L4zbR8&callback=myMap"></script>
+
+</body>
+
+</html>
