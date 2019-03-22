@@ -7,10 +7,10 @@ eventRequest.send();
 eventRequest.onload = function () {
 
   var info = eventRequest.response;
-  showPrestonEvents(info);
+  showSodaspringsEvents(info);
 }
 
-function showPrestonEvents(info) {
+function showSodaspringsEvents(info) {
 
   var eventIndex = 0;
   var eventList = info["towns"];
@@ -33,7 +33,7 @@ function showPrestonEvents(info) {
 
       }
       eventArticle.appendChild(listed);
-      eventsPreston.appendChild(eventArticle);
+      eventsSodasprings.appendChild(eventArticle);
 
     }
 
@@ -41,5 +41,5 @@ function showPrestonEvents(info) {
 
 }
 
-var eventsPreston = document.querySelector(".sodaspringsEvents");
+var eventsSodasprings = document.querySelector(".sodaspringsEvents");
 
