@@ -55,7 +55,7 @@
         text-align: center;
         background-color:#376092;
         display: grid;
-        grid-template-columns: 30% 20% 20% 30%;
+        grid-template-columns: 20% 30% 30% 20%;
         grid-gap: 0px;
     }
     footer>p {

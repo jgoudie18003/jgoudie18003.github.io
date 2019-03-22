@@ -63,10 +63,10 @@ footer aside {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     margin: 1.55rem auto;
-    padding-left: 200px;
     max-width: 100%;
     text-align: left;
     display: inline;
+    grid-column-start: 2;
 }
 main, footer, footer a {
     text-align: center;
