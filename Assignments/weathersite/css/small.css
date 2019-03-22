@@ -2,7 +2,7 @@
     
     article img { width: 29.333%; }
 
-* { margin: 0; box-sizing: border-box; } 
+* { margin: auto; box-sizing: border-box; } 
 
 header {
     font-size: 26px;
@@ -45,7 +45,7 @@ h4 {
 header, nav, main, section, article, footer {
     margin: 1.55rem auto;
     padding: .5rem;
-    max-width: 70%;
+    max-width: 100%;
 }
 
 header, nav, footer {
@@ -165,7 +165,6 @@ article p {
 }
 
 p {
-    display: inline-block;
     width: 300px;
 }
 
