@@ -48,6 +48,12 @@ header, nav, main, section, article, footer {
     max-width: 70%;
 }
 
+header, nav, footer {
+    margin: 1.55rem auto;
+    padding: .5rem;
+    max-width: 100%;
+}
+
 footer aside {
     background-color: #376092;
     color: white;
