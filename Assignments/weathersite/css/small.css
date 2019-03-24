@@ -9,7 +9,8 @@ article img {
 } 
 
 div.gallery {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 header {
