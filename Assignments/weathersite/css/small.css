@@ -57,6 +57,7 @@ header, nav, footer {
 footer aside {
     background-color: #376092;
     color: white;
+    display: flex;
 }
 
 .contact {
@@ -99,7 +100,7 @@ color: #fff
             }
             
             nav ul.hide {
-                display: none
+                display: none;
             }
             nav li {
               float:none;
@@ -163,9 +164,6 @@ article p {
     width: 300px;
 }
 
-p {
-    width: 300px;
-}
 
 .forecast {
     display: none;
@@ -210,12 +208,8 @@ list-style-type: none;
 
 /*small gallery styles*/
 
-div.gallery
-img {
-
-max-width: 
-100%;
-
+div.gallery img {
+max-width: 100%;
 }
 
 footer {
