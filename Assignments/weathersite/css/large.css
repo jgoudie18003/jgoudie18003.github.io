@@ -112,27 +112,22 @@ and (min-width:
 1000px) {
 
 div.gallery {
-
-grid-template-columns: 
-1fr 
-1fr 
-1fr;
-
-max-width: 
-100%;
-
-margin: 
-0;
-
+grid-template-columns: 1fr 1fr 1fr;
+max-width: 100%;
+margin: 0;
 }
-
-}
-
   .gallery {
     display: grid;
     width: 200%
-
 }
+
+div.summary ul {
+    padding: 1%;
+    position: absolute;
+    top: 26px;
+    left: 250px;
+    background-color: white;
+    list-style-type: none;
 
 }
   
