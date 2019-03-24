@@ -63,7 +63,7 @@
 
     .contact {
         justify-self: end;
-        margin-right: 0px
+        margin-right: 80px;
     }
 
 #towndata{
@@ -77,7 +77,6 @@
 .forecast {
     display: inline-block;
     border: #376092;
-    width: 1200px;
 }
 
 .forecast img {
