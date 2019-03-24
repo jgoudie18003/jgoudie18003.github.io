@@ -1,46 +1,40 @@
-    
-@media only screen and (min-width: 1024px) {
-    /* Styles */
-    body {
-        background-color:white;
+@media only screen and (min-width:1024px) {
+    body,header {
+        background-color: #fff
     }
+
     article img {
-        width: 29.333%;
+        width: 29.333%
     }
+
     header {
         position: relative;
-        display: block;
         max-width: 100%;
         height: 100%;
         margin: 0 auto;
-        padding: 0.9rem 4rem;
-        background-color:  white;
-        font-size: 20px;
+        padding: .9rem 4rem;
+        font-size: 20px
     }
-    header h1 {
 
+    header h1 {
         margin: 0;
         display: inline-block;
         color: #fff;
-        float: none;
+        float: none
     }
+
     header .subheading {
         font-size: 1.1em;
         color: #fff;
-        display: contents;
+        display: contents
     }
 
-    nav ul.hide {
-        display: inline;
-    }
-    
     nav .hidehamburger {
-        display: none;
+        display: none
     }
-    
-    nav ul li {
-        display: inline;
-        text-align: center;
+
+    nav li a,nav ul li,nav ul.hide {
+        display: inline
     }
 
     div.summary ul {
@@ -48,93 +42,73 @@
         position: absolute;
         top: 26px;
         left: 250px;
-        background-color: white;
-        list-style-type: none;
+        list-style-type: none
     }
 
-    .active {
-        display: block;
+    .active,header {
+        display: block
     }
-    footer {
-        text-align: center;
-        background-color:white;
-        
+
+    div.summary ul,footer {
+        background-color: #fff
     }
+
     footer aside {
-        text-align: center;
-        background-color:#376092;
+        background-color: #376092;
         display: grid;
         grid-template-columns: 20% 30% 30% 20%;
-        grid-gap: 0px;
+        grid-gap: 0
     }
-    footer>p {
-        text-align: center;}
+
+    footer,footer aside,footer>p,nav ul li {
+        text-align: center
+    }
 
     .contact {
         justify-self: end;
-        margin-right: 80px;
+        margin-right: 80px
     }
 
-#towndata{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    #towndata {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr
+    }
+
+    #events,.forecast {
+        border: #376092
+    }
+
+    .forecast {
+        display: inline-block
+    }
+
+    .forecast img {
+        width: 100%
+    }
+
+    table {
+        display: table;
+        border-collapse: separate;
+        border-spacing: 2px;
+        border-color: gray
+    }
+
+    td {
+        width: 100px
+    }
+
+    header img {
+        width: 600px;
+        height: auto;
+        float: none
+    }@    media only screen and (min-width:1000px) {
+        div.gallery{grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+        margin: 0
+    }
 }
 
-#events {
-    border:#376092
-}
-.forecast {
-    display: inline-block;
-    border: #376092;
-}
-
-.forecast img {
-    width: 100%;
-}
-
-table {
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2px;
-    border-color: grey;
-}
-
-td {
-    width: 100px;
-}
-
-header img {
-    width: 600px;
-    height: auto;
-    float: none;
-}
-
-nav li a {
-    display: inline;
-    
-  }
-/*large gallery styles*/
-
-@media 
-only screen 
-and (min-width: 
-1000px) {
-
-div.gallery {
-grid-template-columns: 1fr 1fr 1fr;
-max-width: 100%;
-margin: 0;
-
-}
-
-
-}
-
-  .gallery {
+.gallery {
     display: grid;
     width: 200%
-
-}
-
-}
-  
+}}

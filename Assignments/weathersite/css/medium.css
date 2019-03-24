@@ -1,29 +1,19 @@
-@media only screen and (min-width: 700px) {
-    
-    article img { width: 29.333%; }
+@media only screen and (min-width:700px) {
+    article img {
+        width: 29.333%
+    }
 
-    /*medium gallery styles*/
+    div.gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px
+    }
 
+    .fishhavenEvents,.prestonEvents,.sodaspringsEvents {
+        display: inline-flex
+    }
 
-div.gallery {
-
-display: 
-grid;
-
-grid-template-columns: 
-1fr 
-1fr;
-
-grid-gap: 
-20px;
-
-}
-
-.prestonEvents, .sodaspringsEvents, .fishhavenEvents {
-    display: inline-flex;
-}
-.prestonEvents div {
-    margin-right: 20px;
-}
-
+    .prestonEvents div {
+        margin-right: 20px
+    }
 }
