@@ -8,11 +8,6 @@ article img {
     box-sizing: border-box; 
 } 
 
-div.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
 header {
     font-size: 26px;
     text-align: center;
@@ -238,4 +233,9 @@ footer {
     display: center;
 }
 
+}
+
+div.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
 }
