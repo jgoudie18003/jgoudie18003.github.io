@@ -193,6 +193,10 @@ section img {
     float: none;
 }
 
+div.gallery {
+    display: block;
+}
+
 div.summary ul {
 padding: 1%;
 position: absolute;

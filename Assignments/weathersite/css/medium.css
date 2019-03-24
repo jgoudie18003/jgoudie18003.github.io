@@ -19,7 +19,7 @@ grid-gap:
 
 }
 
-.prestonEvents {
+.prestonEvents, .sodaspringsEvents, .fishhavenEvents {
     display: inline-flex;
 }
 .prestonEvents div {
