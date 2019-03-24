@@ -2,7 +2,7 @@
     
     article img { width: 29.333%; }
 
-* { margin: auto; box-sizing: border-box; } 
+* { box-sizing: border-box; } 
 
 header {
     font-size: 26px;
@@ -64,7 +64,6 @@ footer aside {
     color: white;
     margin: 1.55rem auto;
     max-width: 100%;
-    text-align: left;
     display: inline;
     grid-column-start: 2;
 }
@@ -203,7 +202,7 @@ div.summary ul {
 padding: 1%;
 position: absolute;
 top: 26px;
-left: 250px;
+left: 175px;
 background-color: white;
 list-style-type: none;
 
