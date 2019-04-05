@@ -62,7 +62,7 @@
     }
     footer aside {
         text-align: center;
-        background-color:#376092;
+        background-color:#ED7D31;
         display: grid;
         grid-template-columns: 20% 30% 30% 20%;
         grid-gap: 0px;
@@ -81,11 +81,11 @@
 }
 
 #events {
-    border:#376092
+    border:#ED7D31;
 }
 .forecast {
     display: inline-block;
-    border: #376092;
+    border: #ED7D31;
 }
 
 .forecast img {
