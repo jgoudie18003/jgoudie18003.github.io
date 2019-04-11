@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Temple Inn & Suites Reservations Page</title>
-    <meta name="description" content="Temple Inn & Suites Reservations Page">
+    <title>Temple Inn & Suites Gallery Page</title>
+    <meta name="description" content="Temple Inn & Suites Gallery Page">
     <meta name="Jason Goudie" content="Jason Goudie">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -23,65 +23,34 @@
             <li><a href="https://jgoudie18003.github.io/Assignments/termproject/home.html">Home</a></li>
             <li><a href="https://jgoudie18003.github.io/Assignments/termproject/about.html">About</a></li>
             <li><a href="https://jgoudie18003.github.io/Assignments/termproject/temples.html">Temples</a></li>
-            <li class="active"><a href="https://jgoudie18003.github.io/Assignments/termproject/reservations.html">Reservations</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/reservations.html">Reservations</a></li>
             <li><a href="https://jgoudie18003.github.io/Assignments/termproject/services.html">Services</a></li>
-            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/gallery.html">Gallery</a></li>
+            <li class="active"><a href="https://jgoudie18003.github.io/Assignments/termproject/gallery.html">Gallery</a></li>
         </ul>
     </nav>
-
     <main>
-        <h1>Fish Haven, Idaho Weather</h1>
-        <div class="summary">
-            <img class="myphoto" src="images/fish_haven.jpg" alt="images/fish_haven" sizes="50vw"
-                srcset="images/fish_haven.jpg 400w, images/fish_haven.jpg 800w, images/fish_haven.jpg 1000w">
-            <ul class="weatherinfo">
-                <li>Currently:<strong><span id="current"></span></strong></li>
-                <li>Temp:<strong><span id="tempF"></span>&deg;</strong></li>
-                <li>Humidity:<strong><span id="humidity"></span>%</strong></li>
-                <li>Windchill:<strong><span id="outputDiv"></span></strong></li>
-                <li>WindSpeed:<strong><span id="speed">18</span> mph</strong></li>
-            </ul>
+        <h1>Reservations</h1>
+        <div class="reservations">
+            <figure>
+                <img src="images/one_king_room.jpg" alt="images/one_king_room">
+                <figcaption>One King Room</figcaption>
+                <li><a href="https://jgoudie18003.github.io/Assignments/termproject/home.html">Home</a></li>
+            </figure>
+            <figure>
+                <img src="images/two_queen_room.jpg" alt="images/two_queen_room">
+                <figcaption>Two Queen Room</figcaption>
+            </figure>
+            <figure>
+                <img src="images/one_bedroom_suite.jpg" alt="images/one_bedroom_suite">
+                <figcaption>One Bedroom Suite</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bunk_beds.jpg" alt="images/bunk_beds">
+                <figcaption>Bunk Beds</figcaption>
+            </figure>
+            
         </div>
-
     </main>
-
-    <section class="forecast">
-        <h3>5 Day Forecast</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th><span id="day1"></span></th>
-                    <th><span id="day2"></span></th>
-                    <th><span id="day3"></span></th>
-                    <th><span id="day4"></span></th>
-                    <th><span id="day5"></span></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src="#" id="weather_icon1" alt="Weather Icon"><br><span id="highTemp1"></span>&deg;F</td>
-                    <td><img src="#" id="weather_icon2" alt="Weather Icon"><br><span id="highTemp2"></span>&deg;F</td>
-                    <td><img src="#" id="weather_icon3" alt="Weather Icon"><br><span id="highTemp3"></span>&deg;F</td>
-                    <td><img src="#" id="weather_icon4" alt="Weather Icon"><br><span id="highTemp4"></span>&deg;F</td>
-                    <td><img src="#" id="weather_icon5" alt="Weather Icon"><br><span id="highTemp5"></span>&deg;F</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <article>
-        <h2>Fish Haven Fish Tornado</h2>
-        <img src="images/sharknado.jpg" alt="Sharknado">
-        <p>Residents were surprised when a sight unfolded in front of their eyes like a scene from Sharknado on Tuesday. It was a bizzare natural phenomenon where a water funnel sucked up thousands of
-            fish from a local lake and dumped them onto the unsuspecting town. It is a rare natural phenonemon that has led
-            to a smelly situation & massive cleanup around town. </p>
-    </article>
-    <h2>Upcoming town events!</h2>
-    <section class="fishhavenEvents">
-        
-        <div>
-            <img src="images/bigfish.jpg" alt="Big Fish">
-        </div>
-    </section>
 
     <footer>
         <aside>
@@ -110,15 +79,12 @@
     </footer>
 
 
-
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/towndata.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/fishhavenweatherapi.js"></script>
-    <script src="scripts/fishhaveneventdata.js"></script>
     <script src="scripts/map.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRgqTtXaRXVAScHhwtP6V_TLCa0L4zbR8&callback=myMap"></script>
-
 </body>
 
 </html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Temple Inn & Suites Services Page</title>
+    <meta name="description" content="Temple Inn & Suites Services Page">
+    <meta name="Jason Goudie" content="Jason Goudie">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/temple_inn_and_suites_logo.jpg" alt="images/temple_inn_and_suites_logo"><br>
+
+    </header>
+    <nav>
+        <button class="hidehamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/home.html">Home</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/about.html">About</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/temples.html">Temples</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/reservations.html">Reservations</a></li>
+            <li class="active"><a
+                    href="https://jgoudie18003.github.io/Assignments/termproject/services.html">Services</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Reservations</h1>
+
+
+        <form action="thanks.html" method="get" enctype="multipart/form-data" name="Reservations" id="reservation">
+
+
+            <fieldset>
+                <legend><span>Personal Information</span></legend>
+
+                <label><span>Full Name:</span> <input name="FullName" type="text" value="" placeholder="Your Name Here"
+                        pattern="[a-zA-Z -._]{5,99}" required></label><br>
+                <label><span>Email:</span> <input name="email" type="email" value=""
+                        placeholder="youremail@gmail.com"></label><br>
+                <label><span>Phone Number:</span> <input name="Phone" type="tel" value="" placeholder="ex. 98346583948"
+                        pattern="[0-9]{10,20}" required></label><br>
+                <label><span>Zip Code:</span> <input name="Zip Code" type="number" value="" placeholder="ex. 54879"
+                        required></label><br>
+            </fieldset>
+
+            <fieldset>
+
+                <legend><span>Location Information</span></legend>
+
+                <label><span>Date of stay:</span><input name="Date of stay" type="date" value=""></label><br>
+                <label><span>Location:</span><input name="Location" type="text" list="Location"></label>
+                <datalist id="Location">
+                    <option value="Columbus, Ohio"></option>
+                    <option value="Indianapolis, Indiana"></option>
+                    <option value="Washington DC"></option>
+                    <option value="Chicacgo, IL"></option>
+                </datalist><br>
+                <label><span>Room Type:</span><input name="Room Type" type="text" list="Room Type"></label>
+                <datalist id="Room Type">
+                    <option value="Guest room, 1 King"></option>
+                    <option value="Guest room, 2 Queen"></option>
+                    <option value="Guest room, 1 Bedroom Suite, 1 King, Sofa bed"></option>
+                    <option value="Guest room, 3 Bunk Beds"></option>
+                </datalist><br>
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>Additional Information or Comments</legend>
+
+                <textarea name="comments" rows="10" cols="30"></textarea>
+            </fieldset>
+
+
+            <input type="submit" value="submit" form="reservation" class="submitb">
+            <input name="redirect" type="hidden" value="thanks.html">
+
+
+        </form>
+
+
+    </main>
+
+    <footer>
+        <aside>
+            <div class="contact">
+                <p><b>templeinnansuites.com</b></p>
+                <p>400 Temple Road</p>
+                <p>Bethesda, MD 20810</p>
+                <p>&#9742; 800-YOU-KNOW</p>
+                <p>&#9993; moroni@templeinnandsuites.com</p>
+                <div class="social">
+                    <img class="social-icons" src="images/facebook.jpg" alt="Facbook Icon">
+                    <img class="social-icons" src="images/pinterest.jpg" alt="Pinterest Icon">
+                    <img class="social-icons" src="images/twitter.jpg" alt="Twitter Icon">
+                    <img class="social-icons" src="images/google.jpg" alt="Google Icon">
+                </div>
+            </div>
+            <div id="googleMap"></div><br>
+        </aside>
+        <p class="span-2">
+            Weather Data provided by <a href="https://openweathermap.org">OpenWeatherMap.org</a>
+        </p>
+        <p class="footer-bar">&copy;2019 All Rights Reserved | templeinnandsuites.com | <span
+                id="currentdate"></span><br>
+        </p>
+
+    </footer>
+
+
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/adjustrating.js"></script>
+    <script src="scripts/map.js"></script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRgqTtXaRXVAScHhwtP6V_TLCa0L4zbR8&callback=myMap"></script>
+
+</body>
+
+</html>
