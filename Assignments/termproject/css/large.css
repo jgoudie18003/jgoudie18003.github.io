@@ -132,6 +132,7 @@ div.reservationstwo {
 
 div.home img {
     display: inline-flex;
+    width: 23%;
 }
 div.gallery {
 grid-template-columns: 1fr 1fr;
