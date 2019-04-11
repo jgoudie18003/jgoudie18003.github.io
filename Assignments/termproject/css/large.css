@@ -120,6 +120,12 @@ only screen
 and (min-width: 
 1000px) {
 
+.reservations {
+    grid-template-columns: 1fr 1fr;
+    max-width: 70%;
+    margin: 0; 
+}   
+
 div.gallery {
 grid-template-columns: 1fr 1fr 1fr;
 max-width: 100%;
