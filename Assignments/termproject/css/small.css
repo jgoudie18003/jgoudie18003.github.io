@@ -210,7 +210,7 @@ list-style-type: none;
 
 /*small gallery styles*/
 
-div.gallery img, div.reservation {
+div.gallery img, div.reservations {
 max-width: 100%;
 }
 
