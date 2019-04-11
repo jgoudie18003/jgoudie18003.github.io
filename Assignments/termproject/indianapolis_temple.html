@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Temple Inn & Suites Temples Page</title>
+    <meta name="description" content="Temple Inn & Suites Temples Page">
+    <meta name="Jason Goudie" content="Jason Goudie">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/temple_inn_and_suites_logo.jpg" alt="images/temple_inn_and_suites_logo"><br>
+
+    </header>
+    <nav>
+        <button class="hidehamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/home.html">Home</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/about.html">About</a></li>
+            <li class="active"><a href="https://jgoudie18003.github.io/Assignments/termproject/temples.html">Temples</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/reservations.html">Reservations</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/services.html">Services</a></li>
+            <li><a href="https://jgoudie18003.github.io/Assignments/termproject/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Soda Springs, Idaho Weather</h1>
+        <div class="summary">
+            <img class="myphoto" src="images/soda_springs.jpg" alt="images/soda_springs" sizes="50vw"
+                srcset="images/soda_springs.jpg 400w, images/soda_springs.jpg 800w, images/soda_springs.jpg 1000w">
+            <ul class="weatherinfo">
+                <li>Currently:<strong><span id="current"></span></strong></li>
+                <li>Temp:<strong><span id="tempF"></span>&deg;</strong></li>
+                <li>Humidity:<strong><span id="humidity"></span>%</strong></li>
+                <li>Windchill:<strong><span id="outputDiv"></span></strong></li>
+                <li>WindSpeed:<strong><span id="speed">18</span> mph</strong></li>
+            </ul>
+        </div>
+
+    </main>
+    <section class="forecast">
+        <h3>5 Day Forecast</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><span id="day1"></span></th>
+                    <th><span id="day2"></span></th>
+                    <th><span id="day3"></span></th>
+                    <th><span id="day4"></span></th>
+                    <th><span id="day5"></span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="#" id="weather_icon1" alt="Weather Icon"><br><span id="highTemp1"></span>&deg;F</td>
+                    <td><img src="#" id="weather_icon2" alt="Weather Icon"><br><span id="highTemp2"></span>&deg;F</td>
+                    <td><img src="#" id="weather_icon3" alt="Weather Icon"><br><span id="highTemp3"></span>&deg;F</td>
+                    <td><img src="#" id="weather_icon4" alt="Weather Icon"><br><span id="highTemp4"></span>&deg;F</td>
+                    <td><img src="#" id="weather_icon5" alt="Weather Icon"><br><span id="highTemp5"></span>&deg;F</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <article>
+        <h2>Soda Springs Avalanche</h2>
+        <img src="images/avalanche.jpg" alt="Avalanche">
+        <p>The road going up the big canyon was covered for 2 weeks due to an Avalanche that dumped 100 tons of snow on
+            the road.
+            Road crews worked tirelessly for weeks to remove all of the snow, debris and unblock the road.
+            Fortunately no one was injured or killed in the accident due to this winters heavy snowfall. </p>
+    </article>
+    <h2>Upcoming town events!</h2>
+    <section class="sodaspringsEvents">
+    
+        <div>
+            <img src="images/geiser.jpg" alt="Geiser">
+        </div>
+    </section>
+
+    <footer>
+        <aside>
+            <div class="contact">
+                <p><b>templeinnansuites.com</b></p>
+                <p>400 Temple Road</p>
+                <p>Bethesda, MD 20810</p>
+                <p>&#9742; 800-YOU-KNOW</p>
+                <p>&#9993; moroni@templeinnandsuites.com</p>
+                <div class="social">
+                    <img class="social-icons" src="images/facebook.jpg" alt="Facbook Icon">
+                    <img class="social-icons" src="images/pinterest.jpg" alt="Pinterest Icon">
+                    <img class="social-icons" src="images/twitter.jpg" alt="Twitter Icon">
+                    <img class="social-icons" src="images/google.jpg" alt="Google Icon">
+                </div>
+            </div>
+            <div id="googleMap"></div><br>
+        </aside>
+        <p class="span-2">
+            Weather Data provided by <a href="https://openweathermap.org">OpenWeatherMap.org</a>
+        </p>
+        <p class="footer-bar">&copy;2019 All Rights Reserved | templeinnandsuites.com | <span
+                id="currentdate"></span><br>
+        </p>
+
+    </footer>
+
+
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/sodaspringsweatherapi.js"></script>
+    <script src="scripts/sodaspringseventdata.js"></script>
+    <script src="scripts/map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRgqTtXaRXVAScHhwtP6V_TLCa0L4zbR8&callback=myMap"></script>
+
+</body>
+
+</html>

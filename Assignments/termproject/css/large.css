@@ -134,7 +134,7 @@ div.home img {
     display: inline-flex;
 }
 div.gallery {
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 max-width: 100%;
 margin: 0;
 
