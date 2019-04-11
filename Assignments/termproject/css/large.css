@@ -121,8 +121,7 @@ and (min-width:
 1000px) {
 
 div.reservations {
-    grid-template-columns: 1fr 1fr;
-    max-width: 70%;
+    display: inline-flex;
     margin: 0; 
 }   
 
