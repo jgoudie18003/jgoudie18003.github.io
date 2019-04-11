@@ -120,7 +120,7 @@ only screen
 and (min-width: 
 1000px) {
 
-.reservations {
+div.reservations {
     grid-template-columns: 1fr 1fr;
     max-width: 70%;
     margin: 0; 
