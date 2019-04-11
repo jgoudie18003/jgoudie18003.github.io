@@ -130,6 +130,9 @@ div.reservationstwo {
     margin: 0; 
 }
 
+div.home img {
+    display: inline-flex;
+}
 div.gallery {
 grid-template-columns: 1fr 1fr 1fr;
 max-width: 100%;
