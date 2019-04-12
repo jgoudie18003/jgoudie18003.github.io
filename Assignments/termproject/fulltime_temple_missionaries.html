@@ -48,11 +48,34 @@
                 to your needs.As a resident you also have access to the Family History Center after hours, anytime
                 access to the Temple Shuttle, and breakfast is still included with your stay.</p>
 
+            <p>Contact Us Today</p>
+            <form action="missionary_confirmation.html" method="get" enctype="multipart/form-data" name="missionary"
+                id="reservation">
 
+                <fieldset>
+                    <legend><span>Contact Information</span></legend>
 
-            <p>For more information please contact <a
-                    href="missionaries@templeinnandsuites.com">missionaries@templeinnandsuites.com</a> or call
-                1-800-YOU-KNOW</p>
+                    <label><span>Full Name:</span> <input name="FullName" type="text" value=""
+                            placeholder="Your Name Here" pattern="[a-zA-Z -._]{5,99}" required></label><br>
+                    <label><span>Email:</span> <input name="email" type="email" value=""
+                            placeholder="youremail@gmail.com"></label><br>
+                    <label><span>Phone Number:</span> <input name="Phone" type="tel" value=""
+                            placeholder="ex. 98346583948" pattern="[0-9]{10,20}" required></label><br>
+                    <label><span>Zip Code:</span> <input name="Zip Code" type="number" value="" placeholder="ex. 54879"
+                            required></label><br>
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Request/Comments</legend>
+
+                    <textarea name="comments" rows="10" cols="30"></textarea>
+                </fieldset>
+
+                <input type="submit" value="submit" form="reservation" class="submitb">
+                <input name="redirect" type="hidden" value="missionary_confirmation.html">
+
+            </form>
         </article>
     </main>
     <footer>
