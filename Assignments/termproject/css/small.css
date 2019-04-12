@@ -191,7 +191,7 @@ article p {
     float: none; 
 }
 
-.services {
+div.services {
     text-align: left;
     max-width: 70%;
 }
