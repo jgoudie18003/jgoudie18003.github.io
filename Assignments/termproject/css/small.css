@@ -191,6 +191,10 @@ article p {
     float: none; 
 }
 
+.services {
+    text-align: left;
+    max-width: 70%;
+}
 section img {
     width: 250px;
     height: auto;
