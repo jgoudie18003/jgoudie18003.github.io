@@ -47,9 +47,10 @@
         padding: 1%;
         position: absolute;
         top: 26px;
-        left: 250px;
-        background-color: white;
+        left: 45px;
+        background-color: #ED7D31;
         list-style-type: none;
+        color: white;
     }
 
     .active {
