@@ -202,8 +202,9 @@ div.summary ul {
 padding: 1%;
 position: absolute;
 top: 26px;
-left: 175px;
-background-color: white;
+left: 45px;
+background-color: #ED7D31;
+color: white;
 list-style-type: none;
 
 }
